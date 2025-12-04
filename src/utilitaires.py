@@ -82,10 +82,8 @@ def compter_mots(texte):
         >>> compter_mots("Un   deux")
         2
     """
-    return NotImplemented
-
-
-
+    list_of_word = list(filter(lambda x: x.strip(),texte.split(" ")))
+    return len(list_of_word)
 # -------------------------------------------------------------------------
 # ESPACE TAMPON POUR LIMITER LES RISQUES DE CONFLIT
 # -------------------------------------------------------------------------
